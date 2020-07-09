@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import "./style/master.scss"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Landing from "./components/pages/Landing"
+import Review from "./components/pages/Review"
+import LogInSignUp from "./components/pages/LogInSignUp"
+import NotFound from "./components/pages/NotFound"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/review" component={Review} />
+        <Route exact path="/login-signup" component={LogInSignUp} />
+        <Route component={NotFound} />
+      </Switch>
+    </Router>
+  )
 }
 
-export default App;
+export default App
