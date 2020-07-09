@@ -1,6 +1,9 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function LogInSignUp() {
-  return <h1>LogInSignUp</h1>
+  return (
+    <>
+      <h1>LogInSignUp</h1>
+    </>
+  )
 }

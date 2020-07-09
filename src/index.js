@@ -1,10 +1,13 @@
 import React from "react"
 import "./style/master.scss"
 import ReactDOM from "react-dom"
+import App from "./App"
 import * as serviceWorker from "./serviceWorker"
 
 ReactDOM.render(
-  <React.StrictMode></React.StrictMode>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById("root")
 )
 

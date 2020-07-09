@@ -1,5 +1,5 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 import "./style/master.scss"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Landing from "./components/pages/Landing"
