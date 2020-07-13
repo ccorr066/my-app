@@ -10,7 +10,7 @@ export default function Landing() {
           <Link to="/login-signup">Write A Review</Link>
         </p>
         <p className="navLink">
-          <Link to="/login-signup">Sign Up / Login</Link>
+          <Link to="/login-signup">Sign Up | Login</Link>
         </p>
       </nav>
       <div className="container">
@@ -22,23 +22,24 @@ export default function Landing() {
             <p className="subTitle text-center">
               Search your city below to read reviews now!
             </p>
-            <div className="mt-10">
-              <form className="form-inline">
-                <input
-                  className="form-control"
-                  type="search"
-                  placeholder="Search for your address, zip code, or city "
-                  aria-label="Search"
-                />
-                <Link
-                  to="/search-it"
-                  className="btn btn-outline-success"
-                  type="submit"
-                >
-                  Search
-                </Link>
-              </form>
-            </div>
+
+            <form className="form-inline">
+              <input
+                className="form-control justify-content-center"
+                type="search"
+                id="searchBar"
+                placeholder="Search for your address, zip code, or city "
+                aria-label="Search"
+              />
+              <Link
+                to="/search-it"
+                id="searchButton"
+                className="btn btn-outline-success"
+                type="submit"
+              >
+                Search
+              </Link>
+            </form>
           </div>
         </div>
       </div>
