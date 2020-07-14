@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ed026f03.chunk.css",
+    "main.js": "/static/js/main.e9c73b49.chunk.js",
+    "main.js.map": "/static/js/main.e9c73b49.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.92360f4f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.92360f4f.js.map",
+    "static/js/2.62252f0c.chunk.js": "/static/js/2.62252f0c.chunk.js",
+    "static/js/2.62252f0c.chunk.js.map": "/static/js/2.62252f0c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e949e75b3c7236726deef0962b7dddee.js": "/precache-manifest.e949e75b3c7236726deef0962b7dddee.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.ed026f03.chunk.css.map": "/static/css/main.ed026f03.chunk.css.map",
+    "static/js/2.62252f0c.chunk.js.LICENSE.txt": "/static/js/2.62252f0c.chunk.js.LICENSE.txt",
+    "static/media/01 www.101soundboards.com.mp3": "/static/media/01 www.101soundboards.com.9658ae66.mp3",
+    "static/media/peterGriffin404.jpg": "/static/media/peterGriffin404.e59ab7fa.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92360f4f.js",
+    "static/js/2.62252f0c.chunk.js",
+    "static/css/main.ed026f03.chunk.css",
+    "static/js/main.e9c73b49.chunk.js"
+  ]
+}
