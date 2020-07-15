@@ -35,6 +35,10 @@ p {
   border-radius: 5px 0 0 5px;
   border: 2px solid #ccc;
   border-right: none;
+  outline: none;
+}
+#searchBar:focus {
+  outline: none !important;
 }
 #searchButton {
   height: 38px;
