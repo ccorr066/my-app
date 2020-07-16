@@ -1,12 +1,13 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import LandingModual from "../ui/landingModual"
+import LandingModal from "../ui/LandingModal"
+
 export default function Landing() {
   return (
     <>
       <div className="background-image">
         <nav className="navbar navbar-light bg-light">
-          <LandingModual />
+          <LandingModal />
         </nav>
         <div className="container">
           <div className="row">
