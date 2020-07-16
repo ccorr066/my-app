@@ -6,13 +6,11 @@ export default function Landing() {
     <>
       <div className="background-image">
         <nav className="navbar navbar-light bg-light">
-          <Link to="/" className="navbar-brand"></Link>
-          <p className="navLink">
-            <Link to="/login-signup">Write A Review</Link>
-          </p>
-          <p className="navLink">
-            <Link to="/login-signup">Sign Up | Login</Link>
-          </p>
+          <div class="modal-dialog modal-default">
+            <p className="navLink">
+              <Link to="/login-signup">Sign Up | Login</Link>
+            </p>
+          </div>
         </nav>
         <div className="container">
           <div className="row">
