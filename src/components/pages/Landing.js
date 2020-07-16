@@ -4,13 +4,42 @@ import { Link } from "react-router-dom"
 export default function Landing() {
   return (
     <>
+      <div className="modal" tabindex="-1" role="dialog">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title">Modal title</h5>
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body">
+              <p className="navLink">
+                <Link to="/login-signup">Sign Up | Login</Link>
+              </p>
+            </div>
+            <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="background-image">
         <nav className="navbar navbar-light bg-light">
-          <div class="modal-dialog modal-default">
-            <p className="navLink">
-              <Link to="/login-signup">Sign Up | Login</Link>
-            </p>
-          </div>
+          <p className="navLink">
+            <Link to="/login-signup">Sign Up | Login</Link>
+          </p>
         </nav>
         <div className="container">
           <div className="row">
