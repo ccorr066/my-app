@@ -2,7 +2,6 @@ import React from "react"
 import classnames from "classnames"
 import hash from "object-hash"
 import { v4 as getUuid } from "uuid"
-import { Link } from "react-router-dom"
 
 export default class SignUp extends React.Component {
   constructor(props) {
@@ -22,7 +21,7 @@ export default class SignUp extends React.Component {
       isDisplayingInputs: true,
     })
   }
-  setEmailState(emailInput) {
+  async setEmailState(emailInput) {
     //eslint-disable-next-line
     const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     const lowerCaseEmailInput = emailInput.toLowerCase()
@@ -49,7 +48,7 @@ export default class SignUp extends React.Component {
     else if (localPart.length < 4) return false
     else return passwordInput.includes(localPart)
   }
-  setPasswordState(passwordInput, emailInput) {
+  async setPasswordState(passwordInput, emailInput) {
     console.log(passwordInput)
     const uniqChars = [...new Set(passwordInput)]
 
@@ -80,16 +79,22 @@ export default class SignUp extends React.Component {
     }
   }
 
-  validateAndCreateUser() {
+  async validateAndCreateUser() {
     const emailInput = document.getElementById("email-input").value
     const passwordInput = document.getElementById("password-input").value
-    this.setEmailState(emailInput)
-    this.setPasswordState(passwordInput, emailInput)
+    await this.setEmailState(emailInput)
+    await this.setPasswordState(passwordInput, emailInput)
     if (
       this.state.hasEmailError === false &&
       this.state.hasPasswordError === false
     ) {
-      console.log("VALID!!")
+      const user = {
+        id: getUuid(),
+        email: emailInput,
+        passwordInput: hash(passwordInput),
+        createdAt: Date.now(),
+      }
+      console.log(user)
     }
   }
 
@@ -98,9 +103,11 @@ export default class SignUp extends React.Component {
       <div className="col-xl-5 col-sm-6 col-12 mb-6">
         <div className="card">
           <div className="card-body text-dark text-sans">
-            <h2 className="card-title text-serif">Nice to meet you</h2>
+            <h2 className="card-title text-serif">
+              Welcome to Evaluate and Experience
+            </h2>
             <p className="card-text mb-4">
-              Sign up for White Bear.Free Forever.
+              Voice your Experience and Opinions.
             </p>
             {this.state.isDisplayingInputs && (
               <>
@@ -140,7 +147,6 @@ export default class SignUp extends React.Component {
                   <input
                     className={classnames({
                       "form-control": true,
-                      "mb-2": true,
                       "is-invalid": this.state.hasPasswordError,
                     })}
                     type="password"
@@ -149,7 +155,7 @@ export default class SignUp extends React.Component {
                   {this.state.hasPasswordError && (
                     <p
                       id="passwordError"
-                      className="text-danger mb-4"
+                      className="text-danger"
                       style={{ fontSize: "13px" }}
                     >
                       {this.state.passwordError}
@@ -157,7 +163,7 @@ export default class SignUp extends React.Component {
                   )}
                   <button
                     type="button"
-                    className="mt-5 btn btn-success btn-block"
+                    className="mt-4 btn btn-success btn-block"
                     id="lets-go"
                     onClick={() => {
                       this.validateAndCreateUser()

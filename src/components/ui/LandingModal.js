@@ -1,6 +1,7 @@
 import React from "react"
 import classnames from "classnames"
-
+import SignUp from "../ui/SignUp"
+import Login from "../ui/Login"
 export default class LandingModal extends React.Component {
   constructor() {
     super()
@@ -37,21 +38,25 @@ export default class LandingModal extends React.Component {
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div className="modal-dialog">
+          <div className="modal-dialog modal-lg">
             <div className="modal-content">
               <div className="modal-header"></div>
               <div className={classnames({ modalBody: this.state.setClose })}>
-                SignUp Login
-              </div>
-              <div className="modal-footer">
-                <button
-                  onClick={() => this.handleClose()}
-                  type="button"
-                  className="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Close
-                </button>
+                <div className="row">
+                  <SignUp />
+
+                  <Login />
+                </div>
+                <div className="modal-footer">
+                  <button
+                    onClick={() => this.handleClose()}
+                    type="button"
+                    className="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>
