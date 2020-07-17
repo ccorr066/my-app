@@ -1,5 +1,6 @@
 import React from "react"
 
+// add state to the input boxes
 export default function Login() {
   return (
     <div className="col-xl-5 offset-xl-2 col-sm-6 col-12 mb-6">

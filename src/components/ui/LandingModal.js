@@ -2,6 +2,11 @@ import React from "react"
 import classnames from "classnames"
 import SignUp from "../ui/SignUp"
 import Login from "../ui/Login"
+
+// fix the design on the cards.
+// adjust both cards to have margin from the border and each other
+// change color on layout
+
 export default class LandingModal extends React.Component {
   constructor() {
     super()

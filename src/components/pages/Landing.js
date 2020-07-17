@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "react-router-dom"
 import LandingModal from "../ui/LandingModal"
 
+// create component page for the logo. it will be the way to go back to the homepage
+
 export default function Landing() {
   return (
     <>
