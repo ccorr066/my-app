@@ -11,9 +11,6 @@ export default function MostRecentReview() {
             With supporting text below as a natural lead-in to additional
             content.
           </p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
         </div>
       </div>
       <div className="card">
@@ -24,9 +21,6 @@ export default function MostRecentReview() {
             With supporting text below as a natural lead-in to additional
             content.
           </p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
         </div>
       </div>
       <div className="card">
@@ -37,9 +31,6 @@ export default function MostRecentReview() {
             With supporting text below as a natural lead-in to additional
             content.
           </p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
         </div>
       </div>
       <div className="card">
@@ -50,9 +41,6 @@ export default function MostRecentReview() {
             With supporting text below as a natural lead-in to additional
             content.
           </p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
         </div>
       </div>
     </>

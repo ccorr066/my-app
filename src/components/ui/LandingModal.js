@@ -2,6 +2,7 @@ import React from "react"
 import classnames from "classnames"
 import SignUp from "../ui/SignUp"
 import Login from "../ui/Login"
+// import { Link } from "react-router-dom"
 
 // fix the design on the cards.
 // adjust both cards to have margin from the border and each other

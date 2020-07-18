@@ -2,6 +2,7 @@ import React from "react"
 import classnames from "classnames"
 import hash from "object-hash"
 import { v4 as getUuid } from "uuid"
+import { Link } from "react-router-dom"
 
 export default class SignUp extends React.Component {
   constructor(props) {
@@ -161,7 +162,8 @@ export default class SignUp extends React.Component {
                       {this.state.passwordError}
                     </p>
                   )}
-                  <button
+                  <Link
+                    to="/"
                     type="button"
                     className="mt-4 btn btn-success btn-block"
                     id="lets-go"
@@ -170,7 +172,7 @@ export default class SignUp extends React.Component {
                     }}
                   >
                     Let's go!
-                  </button>
+                  </Link>
                 </div>
               </>
             )}
