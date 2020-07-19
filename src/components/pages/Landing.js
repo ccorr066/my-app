@@ -1,18 +1,13 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import LandingModal from "../ui/LandingModal"
-import logo from "../../img/Landlord Review-logo/default.png"
-
+import Header from "../ui/Header"
 // create component page for the logo. it will be the way to go back to the homepage
 
 export default function Landing() {
   return (
     <>
       <div className="background-image">
-        <nav className="navbar navbar-light bg-light">
-          <img src={logo} width="100px" className="mr-2 " alt="" />
-          <LandingModal />
-        </nav>
+        <Header />
         <div className="container">
           <div className="row">
             <div className="col-12">

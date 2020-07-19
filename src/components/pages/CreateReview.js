@@ -1,10 +1,12 @@
 import React from "react"
+import Header from "../ui/Header"
 // import { star } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "react-router-dom"
 export default function CreateReview() {
   return (
     <>
+      <Header />
       <div className="container">
         <div className="row">
           <div className="col-12">

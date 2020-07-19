@@ -1,9 +1,11 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import Header from "../ui/Header"
 
 export default function MostRecentReview() {
   return (
     <>
+      <Header />
       <div className="container">
         <div className="row">
           <div className="col">
