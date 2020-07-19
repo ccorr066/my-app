@@ -1,7 +1,7 @@
 import React from "react"
-import { star } from "@fortawesome/free-solid-svg-icons"
+// import { star } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
+import { Link } from "react-router-dom"
 export default function CreateReview() {
   return (
     <>
@@ -53,11 +53,15 @@ export default function CreateReview() {
                 >
                   Pros: Cons:
                 </textarea>
-                <input
-                  class="btn btn-primary justify-content-end"
+
+                <Link
+                  to="/most-recent-review"
+                  id="CreateReviewSubmit"
+                  className="btn btn-primary"
                   type="submit"
-                  value="Submit"
-                />
+                >
+                  Submit
+                </Link>
               </div>
             </div>
           </div>

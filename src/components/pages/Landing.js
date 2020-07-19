@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import LandingModal from "../ui/LandingModal"
+import logo from "../../img/Landlord Review-logo/default.png"
 
 // create component page for the logo. it will be the way to go back to the homepage
 
@@ -9,6 +10,7 @@ export default function Landing() {
     <>
       <div className="background-image">
         <nav className="navbar navbar-light bg-light">
+          <img src={logo} width="100px" className="mr-2 " alt="" />
           <LandingModal />
         </nav>
         <div className="container">

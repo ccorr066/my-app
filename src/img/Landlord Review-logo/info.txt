@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Snickles
+font link: https://www.fontsquirrel.com/fonts/Snickles
+font author: Tup Wanders
+font author site: http://www.tupwanders.nl/
+
+
+icon designer: alrigel
+icon designer link: /alrigel
+        
+
+fontColor: {"hex":"#858385"}
+bgColor: {"hex":"#FFFFFF"}
+iconColor: {"hex":"#858385"}
+
+      

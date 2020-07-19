@@ -105,11 +105,9 @@ export default class SignUp extends React.Component {
         <div className="card">
           <div className="card-body text-dark text-sans">
             <h2 className="card-title text-serif">
-              Welcome to Evaluate and Experience
+              Welcome to Landlord Review{" "}
             </h2>
-            <p className="card-text mb-4">
-              Voice your Experience and Opinions.
-            </p>
+            <p className="card-text mb-4">Let's Evaluate your Experience.</p>
             {this.state.isDisplayingInputs && (
               <>
                 <p
