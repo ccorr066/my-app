@@ -46,6 +46,16 @@ export default function CreateReview() {
                   Property Manager
                 </label>
               </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck1"
+                />
+                <label class="form-check-label" for="gridCheck1">
+                  Remain Anonymous
+                </label>
+              </div>
               <div class="card-body">
                 <textarea
                   rows="3"

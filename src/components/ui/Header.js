@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <nav className="navbar navbar-light bg-light">
       <Link to="/" type="logo" className="mr-2 ">
-        <img src={logo} alt="" />
+        <img src={logo} width="100px" alt="" />
       </Link>
       <LandingModal />
     </nav>
