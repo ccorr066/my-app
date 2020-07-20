@@ -5,6 +5,7 @@ export default function SearchIt() {
   return (
     <>
       <Header />
+
       <div id="background-buildings">
         <div className="container">
           <div className="row">
