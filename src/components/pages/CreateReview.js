@@ -9,7 +9,7 @@ export default function CreateReview() {
       <Header />
       <div id="background-buildings">
         <div className="container">
-          <div className="row">
+          <div className="row" style={{ marginTop: "20px" }}>
             <div className="col-12">
               <div class="card">
                 <h5 class="card-header">

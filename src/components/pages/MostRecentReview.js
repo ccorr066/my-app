@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import Header from "../ui/Header"
 
 export default function MostRecentReview() {
@@ -15,7 +14,7 @@ export default function MostRecentReview() {
                 style={{
                   width: "18rem",
                   marginBottom: "20px",
-                  marginTop: "20px",
+                  marginTop: "40px",
                 }}
               >
                 <div className="card-body w-75">
@@ -27,9 +26,6 @@ export default function MostRecentReview() {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <Link to="/create-review" className="card-link">
-                    Card link
-                  </Link>
                 </div>
               </div>
               <div
@@ -45,9 +41,6 @@ export default function MostRecentReview() {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <Link to="/create-review" className="card-link">
-                    Card link
-                  </Link>
                 </div>
               </div>
               <div
@@ -63,9 +56,6 @@ export default function MostRecentReview() {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <Link to="/create-review" className="card-link">
-                    Card link
-                  </Link>
                 </div>
               </div>
               <div
@@ -81,9 +71,6 @@ export default function MostRecentReview() {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <Link to="/create-review" className="card-link">
-                    Card link
-                  </Link>
                 </div>
               </div>
             </div>
