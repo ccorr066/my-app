@@ -18,15 +18,14 @@ p {
   color: #922b21 !important;
 }
 .navLink {
-  justify-content: right;
   margin-right: 20px;
   text-decoration-line: none;
   font-size: 16px;
 }
-.navlink > hover {
-  border-radius: box;
-}
 
+#navSigninButton {
+  align-content: flex-end;
+}
 .title {
   color: white;
 }
