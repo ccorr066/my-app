@@ -28,6 +28,7 @@ export default class LandingModal extends React.Component {
         <button
           onClick={() => this.handleShow()}
           type="button"
+          id="navSigninButton"
           className="btn btn-primary"
           data-toggle="modal"
           data-target="#exampleModal"
