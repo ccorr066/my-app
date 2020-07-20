@@ -15,6 +15,7 @@ p {
 .navbar {
   padding: 0.5rem 1.25rem;
   height: 7vh;
+  color: #922b21 !important;
 }
 .navLink {
   justify-content: right;
@@ -53,9 +54,7 @@ p {
   line-height: 30px;
   width: 100px;
 }
-a:hover {
-  text-decoration: none;
-}
+
 .modalHack {
   display: block;
   opacity: 1 !important;
@@ -66,3 +65,5 @@ a:hover {
 #logo {
   justify-content: start;
 }
+// .card-link {
+// }

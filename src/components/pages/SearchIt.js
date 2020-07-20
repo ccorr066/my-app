@@ -9,8 +9,12 @@ export default function SearchIt() {
         <div className="row">
           <div className="col">
             <div
-              className="card"
-              style={{ width: "18rem", marginBottom: "20px" }}
+              className="card w-75"
+              style={{
+                width: "18rem",
+                marginBottom: "20px",
+                marginTop: "20px",
+              }}
             >
               <div className="card-body ">
                 <h5 className="card-title">Card title</h5>
@@ -20,12 +24,12 @@ export default function SearchIt() {
                   the bulk of the card's content.
                 </p>
                 <Link to="/create-review" className="card-link">
-                  Card link
+                  Create a Review
                 </Link>
               </div>
             </div>
             <div
-              className="card"
+              className="card w-75"
               style={{ width: "18rem", marginBottom: "20px" }}
             >
               <div className="card-body">
@@ -36,12 +40,12 @@ export default function SearchIt() {
                   the bulk of the card's content.
                 </p>
                 <Link to="/create-review" className="card-link">
-                  Card link
+                  Create a Review
                 </Link>
               </div>
             </div>
             <div
-              className="card"
+              className="card w-75"
               style={{ width: "18rem", marginBottom: "20px" }}
             >
               <div className="card-body">
@@ -52,12 +56,12 @@ export default function SearchIt() {
                   the bulk of the card's content.
                 </p>
                 <Link to="/create-review" className="card-link">
-                  Card link
+                  Create a Review
                 </Link>
               </div>
             </div>
             <div
-              className="card"
+              className="card w-75"
               style={{ width: "18rem", marginBottom: "20px" }}
             >
               <div className="card-body">
@@ -68,7 +72,7 @@ export default function SearchIt() {
                   the bulk of the card's content.
                 </p>
                 <Link to="/create-review" className="card-link">
-                  Card link
+                  Create a Review
                 </Link>
               </div>
             </div>

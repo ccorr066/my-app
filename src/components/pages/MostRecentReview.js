@@ -10,10 +10,14 @@ export default function MostRecentReview() {
         <div className="row">
           <div className="col">
             <div
-              className="card"
-              style={{ width: "18rem", marginBottom: "20px" }}
+              className="card w-75"
+              style={{
+                width: "18rem",
+                marginBottom: "20px",
+                marginTop: "20px",
+              }}
             >
-              <div className="card-body ">
+              <div className="card-body w-75">
                 <h5 className="card-title">Address</h5>
                 <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
                 <p className="card-text">
@@ -26,7 +30,7 @@ export default function MostRecentReview() {
               </div>
             </div>
             <div
-              className="card"
+              className="card w-75"
               style={{ width: "18rem", marginBottom: "20px" }}
             >
               <div className="card-body">
@@ -42,7 +46,7 @@ export default function MostRecentReview() {
               </div>
             </div>
             <div
-              className="card"
+              className="card w-75"
               style={{ width: "18rem", marginBottom: "20px" }}
             >
               <div className="card-body">
@@ -58,7 +62,7 @@ export default function MostRecentReview() {
               </div>
             </div>
             <div
-              className="card"
+              className="card w-75"
               style={{ width: "18rem", marginBottom: "20px" }}
             >
               <div className="card-body">
