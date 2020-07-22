@@ -53,14 +53,14 @@ export default class LandingModal extends React.Component {
         >
           <div className="modal-dialog modal-lg">
             <div className="modal-content">
-              <div className="modal-header"></div>
+              <div className="modal-header border-0"></div>
               <div className={classnames({ modalBody: this.state.setClose })}>
                 <div className="row">
                   <SignUp />
 
                   <Login />
                 </div>
-                <div className="modal-footer">
+                <div className="modal-footer border-0">
                   <button
                     onClick={() => this.handleClose()}
                     type="button"

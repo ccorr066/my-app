@@ -10,7 +10,7 @@ export default function Header() {
         <img
           id="logo"
           src={logo}
-          style={{ marginTop: "-60px", marginLeft: "-140px" }}
+          style={{ marginTop: "-56px", marginLeft: "-140px" }}
           alt=""
         />
       </Link>

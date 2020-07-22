@@ -103,7 +103,7 @@ export default class SignUp extends React.Component {
     return (
       <div className="col-xl-5 col-sm-6 col-12 mb-6">
         <div className="card">
-          <div className="card-body text-dark text-sans">
+          <div className="card-body text-sans">
             <h2 className="card-title text-serif">
               Welcome to Landlord Review{" "}
             </h2>
