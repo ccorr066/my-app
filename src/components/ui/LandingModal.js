@@ -32,9 +32,15 @@ export default class LandingModal extends React.Component {
           className="btn btn-primary"
           data-toggle="modal"
           data-target="#exampleModal"
+          style={{
+            marginTop: "25px",
+            marginBottom: "80px",
+            marginLeft: "939px",
+          }}
         >
           Sign Up | Login
         </button>
+
         <div
           className={classnames("modal fade", {
             modalHack: this.state.setShow,

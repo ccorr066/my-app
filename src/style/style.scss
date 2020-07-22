@@ -1,8 +1,8 @@
 h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 p {
-  font-size: 25px;
+  font-size: 20px;
   color: black;
 }
 
@@ -10,34 +10,16 @@ p {
   background-image: url("../img/home-real-estate-106399.jpg");
   background-size: cover;
   min-height: 100vh;
-  background-position: 0px 25px;
 }
 #background-buildings {
   background-image: url("../img/high-angle-photography-of-high-rise-buildings-near-road-681331.jpg");
   background-size: cover;
   min-height: 100vh;
 }
-.opacity-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: 0, 0, 0, 0.63;
-}
-.navbar {
-  padding: 0.5rem 1.25rem;
-  height: 7vh;
-  background: #f5f5f5;
-}
-.navLink {
-  margin-right: 20px;
-  text-decoration-line: none;
-  font-size: 16px;
-}
 
 #navSigninButton {
-  align-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 .title {
   color: white;
@@ -57,14 +39,20 @@ p {
   border-right: none;
   outline: none;
 }
-#searchBar:focus {
-  outline: none !important;
-}
+
 #searchButton {
   height: 38px;
   border-radius: 0 5px 5px 0;
   line-height: 30px;
   width: 100px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: transparent;
+  border-color: #666877;
+}
+.btn-primary:hover {
+  background-color: #666877;
 }
 
 .modalHack {
@@ -75,7 +63,5 @@ p {
   background: transparent;
 }
 #logo {
-  justify-content: start;
+  color: white;
 }
-// .card-link {
-// }

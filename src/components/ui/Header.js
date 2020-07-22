@@ -6,12 +6,16 @@ import { Link } from "react-router-dom"
 export default function Header() {
   return (
     <>
-      <nav className="navbar navbar-light" id="mainNav">
-        <Link to="/">
-          <img src={logo} className="justify-content-start" alt="" />
-        </Link>
-        <LandingModal />
-      </nav>
+      <Link to="/">
+        <img
+          id="logo"
+          src={logo}
+          style={{ marginTop: "-60px", marginLeft: "-140px" }}
+          alt=""
+        />
+      </Link>
+
+      <LandingModal />
     </>
   )
 }
