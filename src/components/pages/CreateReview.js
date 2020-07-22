@@ -84,6 +84,7 @@ export default function CreateReview() {
                   <textarea
                     rows="3"
                     col="40"
+                    autoFocus={true}
                     className="form-control z-depth-1"
                     id="textBox"
                   >
@@ -97,13 +98,13 @@ export default function CreateReview() {
                   >
                     Cons:
                   </textarea>
-                  <div className="form-check" style={{ marginTop: "5px" }}>
+                  <div className="form-check" style={{ marginTop: "20px" }}>
                     <input
                       className="form-check-input"
                       type="checkbox"
                       id="gridCheck1"
                     />
-                    <label className="form-check-label" for="gridCheck1">
+                    <label className="form-check-label" htmFor="gridCheck1">
                       Remain Anonymous
                     </label>
 
