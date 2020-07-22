@@ -17,10 +17,6 @@ p {
   min-height: 100vh;
 }
 
-#navSigninButton {
-  display: flex;
-  justify-content: flex-end;
-}
 .title {
   color: white;
 }
@@ -46,6 +42,10 @@ p {
   line-height: 30px;
   width: 100px;
 }
+#reviewCard {
+  width: 75%;
+  margin: 0 auto;
+}
 .btn-primary {
   color: #fff;
   background-color: transparent;
@@ -59,7 +59,11 @@ p {
   display: block;
   opacity: 1 !important;
 }
-
+.modalCard {
+  padding-right: 20px;
+  padding-left: 60px;
+  margin-left: 30px;
+}
 #logo {
   color: white;
 }

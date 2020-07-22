@@ -21,11 +21,36 @@ export default function SearchIt() {
               <div className="card-body border-0">
                 <h5 className="card-title ">Card title</h5>
                 <h6 className="card-subtitle">
-                  <img src={starIcon} alt="" style={{ width: "20px" }} />
-                  <img src={starIcon} alt="" style={{ width: "20px" }} />
-                  <img src={starIcon} alt="" style={{ width: "20px" }} />
-                  <img src={starIcon} alt="" style={{ width: "20px" }} />
-                  <img src={starIcon} alt="" style={{ width: "20px" }} />
+                  <img
+                    src={starIcon}
+                    alt=""
+                    className="star"
+                    style={{ width: "20px" }}
+                  />
+                  <img
+                    src={starIcon}
+                    alt=""
+                    className="star"
+                    style={{ width: "20px" }}
+                  />
+                  <img
+                    src={starIcon}
+                    alt=""
+                    className="star"
+                    style={{ width: "20px" }}
+                  />
+                  <img
+                    src={starIcon}
+                    alt=""
+                    className="star"
+                    style={{ width: "20px" }}
+                  />
+                  <img
+                    src={starIcon}
+                    alt=""
+                    className="star"
+                    style={{ width: "20px" }}
+                  />
                 </h6>
                 <p className="card-text">
                   Some quick example text to build on the card title and make up

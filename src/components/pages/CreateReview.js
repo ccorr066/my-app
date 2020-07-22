@@ -8,77 +8,111 @@ export default function CreateReview() {
     <>
       <div id="background-buildings">
         <div className="container">
-          <Header />
+          <div className="row">
+            <Header />
 
-          <div className="card">
-            <h5 className="card-header border-0">Address of home</h5>
-            <h6 className="card-subtitle mb-2 text-muted mb-10">
-              <img src={starIcon} alt="" style={{ width: "20px" }} />
-              <img src={starIcon} alt="" style={{ width: "20px" }} />
-              <img src={starIcon} alt="" style={{ width: "20px" }} />
-              <img src={starIcon} alt="" style={{ width: "20px" }} />
-              <img src={starIcon} alt="" style={{ width: "20px" }} />
-            </h6>
-            <div>
-              <div className="custom-control custom-control-inline custom-radio">
-                <input
-                  type="radio"
-                  className="custom-control-input"
-                  id="customControlValidation2"
-                  name="radio-stacked"
-                  required
+            <div className="card" id="reviewCard">
+              <h5 className="card-header border-0">Address of home</h5>
+              <h6 className="card-subtitle mb-2 text-muted mb-10">
+                <img
+                  src={starIcon}
+                  alt=""
+                  className="star"
+                  style={{ width: "20px" }}
                 />
-                <label
-                  className="custom-control-label"
-                  htmlFor="customControlValidation2"
+                <img
+                  src={starIcon}
+                  alt=""
+                  className="star"
+                  style={{ width: "20px" }}
+                />
+                <img
+                  src={starIcon}
+                  alt=""
+                  className="star"
+                  style={{ width: "20px" }}
+                />
+                <img
+                  src={starIcon}
+                  alt=""
+                  className="star"
+                  style={{ width: "20px" }}
+                />
+                <img
+                  src={starIcon}
+                  alt=""
+                  className="star"
+                  style={{ width: "20px" }}
+                />
+              </h6>
+              <div>
+                <div className="custom-control custom-control-inline custom-radio">
+                  <input
+                    type="radio"
+                    className="custom-control-input"
+                    id="customControlValidation2"
+                    name="radio-stacked"
+                    required
+                  />
+                  <label
+                    className="custom-control-label"
+                    htmlFor="customControlValidation2"
+                  >
+                    LandLord
+                  </label>
+                </div>
+                <div className="custom-control custom-control-inline custom-radio mb-3">
+                  <input
+                    type="radio"
+                    className="custom-control-input"
+                    id="customControlValidation3"
+                    name="radio-stacked"
+                    required
+                  />
+                  <label
+                    className="custom-control-label"
+                    htmlFor="customControlValidation3"
+                  >
+                    Property Manager
+                  </label>
+                </div>
+                <div className="form-check">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    id="gridCheck1"
+                  />
+                  <label className="form-check-label" for="gridCheck1">
+                    Remain Anonymous
+                  </label>
+                </div>
+              </div>
+              <div className="card-body">
+                <textarea
+                  rows="3"
+                  col="40"
+                  className="form-control z-depth-1"
+                  id="textBox"
                 >
-                  LandLord
-                </label>
-              </div>
-              <div className="custom-control custom-control-inline custom-radio mb-3">
-                <input
-                  type="radio"
-                  className="custom-control-input"
-                  id="customControlValidation3"
-                  name="radio-stacked"
-                  required
-                />
-                <label
-                  className="custom-control-label"
-                  htmlFor="customControlValidation3"
+                  Pros:
+                </textarea>
+                <textarea
+                  rows="3"
+                  col="40"
+                  className="form-control z-depth-1"
+                  id="textBox"
                 >
-                  Property Manager
-                </label>
+                  Cons:
+                </textarea>
+                <Link
+                  to="/most-recent-review"
+                  id="CreateReviewSubmit"
+                  className="btn btn-primary"
+                  type="submit"
+                >
+                  Submit
+                </Link>
               </div>
-              <div className="form-check">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="gridCheck1"
-                />
-                <label className="form-check-label" for="gridCheck1">
-                  Remain Anonymous
-                </label>
-              </div>
-            </div>
-            <div className="card-body">
-              <textarea
-                rows="3"
-                col="40"
-                className="form-control z-depth-1"
-                id="textBox"
-              >
-                Pros: Cons:
-              </textarea>
-
-              <Link
-                to="/most-recent-review"
-                id="CreateReviewSubmit"
-                className="btn btn-primary"
-                type="submit"
-              >
-                Submit
-              </Link>
             </div>
           </div>
         </div>

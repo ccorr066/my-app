@@ -101,7 +101,7 @@ export default class SignUp extends React.Component {
 
   render() {
     return (
-      <div className="col-xl-5 col-sm-6 col-12 mb-6">
+      <div className="col-xl-5 col-sm-6 col-12 modalCard">
         <div className="card">
           <div className="card-body text-sans">
             <h2 className="card-title text-serif">
