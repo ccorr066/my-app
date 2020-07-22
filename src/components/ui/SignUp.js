@@ -12,8 +12,10 @@ export default class SignUp extends React.Component {
       isDisplayingInputs: false,
       emailError: "",
       passwordError: "",
+      fullNameError: "",
       hasEmailError: false,
       hasPasswordError: false,
+      hasFullNameError: false,
     }
   }
 
@@ -79,18 +81,34 @@ export default class SignUp extends React.Component {
       this.setState({ passwordError: "", hasPasswordError: false })
     }
   }
+  async setFullNameState(fullNameInput) {
+    //eslint-disable-next-line
+    const lowerCaseFullName = fullNameInput.toLowerCase()
+
+    if (fullNameInput.length === 0) {
+      this.setState({
+        fullNameError: "Please enter your full name. ",
+        hasFullNameError: true,
+      })
+    } else {
+      this.setState({ fullNameError: "", hasFullNameError: false })
+    }
+  }
 
   async validateAndCreateUser() {
     const emailInput = document.getElementById("email-input").value
     const passwordInput = document.getElementById("password-input").value
+    const fullNameInput = document.getElementById("full-name-input").value
     await this.setEmailState(emailInput)
     await this.setPasswordState(passwordInput, emailInput)
+    await this.setFullNameState(fullNameInput)
     if (
       this.state.hasEmailError === false &&
       this.state.hasPasswordError === false
     ) {
       const user = {
         id: getUuid(),
+        fullName: fullNameInput,
         email: emailInput,
         passwordInput: hash(passwordInput),
         createdAt: Date.now(),
@@ -117,9 +135,33 @@ export default class SignUp extends React.Component {
                 >
                   Let's get you signed up.
                 </p>
+                <form>
+                  <div class="form-row">
+                    <div class="col">
+                      <h4 className="text-muted mt-4">Full Name</h4>
+                      <input
+                        type="text"
+                        className={classnames({
+                          "form-control": true,
+                          "is-invalid": this.state.hasFullNameError,
+                        })}
+                        id="full-name-input"
+                      />
+                      {this.state.hasFullNameError && (
+                        <p
+                          id="full-name-error"
+                          className="mb-2 text-danger"
+                          style={{ fontSize: "13px" }}
+                        >
+                          {this.state.fullNameError}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </form>
 
                 <div id="drop-assign">
-                  <h4 className="text-muted mt-2">Email address</h4>
+                  <h4 className="text-muted mt-4">Email address</h4>
                   <input
                     className={classnames({
                       "form-control": true,
