@@ -46,7 +46,7 @@ export default class LandingModal extends React.Component {
             modalHack: this.state.setShow,
           })}
           id="exampleModal"
-          tabindex="-1"
+          tabIndex="-1"
           role="dialog"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"

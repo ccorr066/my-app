@@ -85,6 +85,7 @@ export default function CreateReview() {
                     rows="3"
                     col="40"
                     autoFocus={true}
+                    // defaultValue={""}
                     className="form-control z-depth-1"
                     id="textBox"
                   >
@@ -93,6 +94,7 @@ export default function CreateReview() {
                   <textarea
                     rows="3"
                     col="40"
+                    // defaultValue={""}
                     className="form-control z-depth-1"
                     id="textBox"
                   >
@@ -104,7 +106,7 @@ export default function CreateReview() {
                       type="checkbox"
                       id="gridCheck1"
                     />
-                    <label className="form-check-label" htmFor="gridCheck1">
+                    <label className="form-check-label" htmlFor="gridCheck1">
                       Remain Anonymous
                     </label>
 
