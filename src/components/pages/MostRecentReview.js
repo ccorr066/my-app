@@ -23,7 +23,6 @@ export default function MostRecentReview() {
               >
                 <div className="card-body">
                   <h5 className="card-title d-inline p-2 ">Address</h5>
-                  <p className="d-inline p-2  float-right">Date</p>
                   <h5 className="card-title">Name</h5>
                   <h6 className="card-subtitle mb-2 text-muted">
                     <img
@@ -61,7 +60,11 @@ export default function MostRecentReview() {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <Link to="/create-review" className="card-link float-right">
+                  <p className="d-inline p-2">Date</p>
+                  <Link
+                    to="/create-review"
+                    className="card-link d-inline p-2 float-right"
+                  >
                     Edit
                   </Link>
                 </div>
@@ -72,7 +75,7 @@ export default function MostRecentReview() {
               >
                 <div className="card-body">
                   <h5 className="card-title d-inline p-2 ">Address</h5>
-                  <p className="d-inline p-2  float-right">Date</p>
+
                   <h5 className="card-title">Name</h5>
                   <h6 className="card-subtitle mb-2 text-muted">
                     <img src={starIcon} alt="" style={{ width: "20px" }} />
@@ -85,7 +88,11 @@ export default function MostRecentReview() {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <Link to="/create-review" className="card-link float-right">
+                  <p className="d-inline p-2">Date</p>
+                  <Link
+                    to="/create-review"
+                    className="card-link d-inline p-2 float-right"
+                  >
                     Edit
                   </Link>
                 </div>
@@ -96,7 +103,7 @@ export default function MostRecentReview() {
               >
                 <div className="card-body">
                   <h5 className="card-title d-inline p-2 ">Address</h5>
-                  <p className="d-inline p-2  float-right">Date</p>
+
                   <h5 className="card-title">Name</h5>
                   <h6 className="card-subtitle mb-2 text-muted">
                     <img src={starIcon} alt="" style={{ width: "20px" }} />
@@ -109,7 +116,11 @@ export default function MostRecentReview() {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <Link to="/create-review" className="card-link float-right">
+                  <p className="d-inline p-2">Date</p>
+                  <Link
+                    to="/create-review"
+                    className="card-link  d-inline p-2 float-right"
+                  >
                     Edit
                   </Link>
                 </div>
@@ -120,7 +131,6 @@ export default function MostRecentReview() {
               >
                 <div className="card-body">
                   <h5 className="card-title d-inline p-2 ">Address</h5>
-                  <p className="d-inline p-2  float-right">Date</p>
                   <h5 className="card-title">Name</h5>
                   <h6 className="card-subtitle mb-2 text-muted">
                     <img src={starIcon} alt="" style={{ width: "20px" }} />
@@ -133,7 +143,11 @@ export default function MostRecentReview() {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <Link to="/create-review" className="card-link float-right">
+                  <p className="d-inline p-2">Date</p>
+                  <Link
+                    to="/create-review"
+                    className="card-link d-inline p-2 float-right"
+                  >
                     Edit
                   </Link>
                 </div>

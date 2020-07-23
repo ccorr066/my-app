@@ -10,15 +10,16 @@ export default function Landing() {
       <div className="background-image">
         <div className="container">
           <div className="row">
-            <div className="col-12 mt-xl-7 mt-lg-5  mt-4 branding-margin">
+            <div className="col-12">
               <Header />
 
-              <h1 className="text-brand text-white mt-2 mt-sm-0 mt-lg-2 logo-text-fluid">
+              <h1
+                className="text-brand text-white"
+                style={{ marginTop: "-60px" }}
+              >
                 Get to Know your future Landlords and their rental properties.
               </h1>
-            </div>
 
-            <div className="col-12">
               <p className="subTitle text-center">
                 Search your city below to read reviews now!
               </p>

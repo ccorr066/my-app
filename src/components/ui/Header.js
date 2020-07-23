@@ -10,12 +10,15 @@ export default function Header() {
         <div className="row">
           <div className="col-12">
             <Link to="/">
-              <img src={logo} className="float-left" alt="" />
+              <img
+                src={logo}
+                style={{ marginTop: "-56px", marginLeft: "-140px" }}
+                alt=""
+              />
             </Link>
           </div>
-          <div className="col-12">
-            <LandingModal />
-          </div>
+
+          <LandingModal />
         </div>
       </div>
     </>

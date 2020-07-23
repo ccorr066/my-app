@@ -29,13 +29,13 @@ export default class LandingModal extends React.Component {
           onClick={() => this.handleShow()}
           type="button"
           id="navSigninButton"
-          className="btn btn-primary"
+          className="btn btn-primary float-right"
           data-toggle="modal"
           data-target="#exampleModal"
           style={{
-            marginTop: "25px",
-            marginBottom: "80px",
-            marginLeft: "939px",
+            marginTop: "-25px",
+
+            marginLeft: "px",
           }}
         >
           Sign Up | Login

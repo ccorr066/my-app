@@ -18,7 +18,7 @@ export default function SearchIt() {
                 style={{
                   width: "18rem",
                   marginBottom: "20px",
-                  marginTop: "20px",
+                  marginTop: "40px",
                 }}
               >
                 <div className="card-body border-0">
