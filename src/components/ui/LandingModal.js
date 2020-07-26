@@ -1,7 +1,7 @@
-import React from "react"
-import classnames from "classnames"
-import SignUp from "../ui/SignUp"
-import Login from "../ui/Login"
+import React from "react";
+import classnames from "classnames";
+import SignUp from "../ui/SignUp";
+import Login from "../ui/Login";
 // import { Link } from "react-router-dom"
 
 // fix the design on the cards.
@@ -10,19 +10,32 @@ import Login from "../ui/Login"
 
 export default class LandingModal extends React.Component {
   constructor() {
-    super()
-    this.state = { setShow: false }
+    super();
+    this.state = { setShow: false, isLoggedIn: false };
   }
 
   handleClose() {
-    this.setState({ setShow: false })
+    this.setState({ setShow: false });
   }
 
   handleShow() {
-    this.setState({ setShow: true })
+    this.handleLoginStatus();
+    this.setState({ setShow: true });
+  }
+
+  handleLoginStatus() {
+    let toggle = !this.state.isLoggedIn;
+    this.setState({ isLoggedIn: toggle });
   }
 
   render() {
+    const loginState = this.state.isLoggedIn;
+    let btnText;
+    if (loginState === true) {
+      btnText = "Logout";
+    } else {
+      btnText = "Signup | Login";
+    }
     return (
       <>
         <button
@@ -36,9 +49,8 @@ export default class LandingModal extends React.Component {
           data-toggle="modal"
           data-target="#exampleModal"
         >
-          Sign Up | Login
+          {btnText}
         </button>
-
         <div
           className={classnames("modal fade", {
             modalHack: this.state.setShow,
@@ -73,6 +85,6 @@ export default class LandingModal extends React.Component {
           </div>
         </div>
       </>
-    )
+    );
   }
 }
