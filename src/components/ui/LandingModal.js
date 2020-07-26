@@ -15,11 +15,11 @@ export default class LandingModal extends React.Component {
   }
 
   handleClose() {
+    this.handleLoginStatus();
     this.setState({ setShow: false });
   }
 
   handleShow() {
-    this.handleLoginStatus();
     this.setState({ setShow: true });
   }
 
