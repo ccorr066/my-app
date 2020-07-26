@@ -29,32 +29,36 @@ export default class LandingModal extends React.Component {
           onClick={() => this.handleShow()}
           type="button"
           id="navSigninButton"
-          className="btn btn-primary"
+          className="btn btn-primary float-right"
+          style={{
+            marginTop: "70px",
+          }}
           data-toggle="modal"
           data-target="#exampleModal"
         >
           Sign Up | Login
         </button>
+
         <div
           className={classnames("modal fade", {
             modalHack: this.state.setShow,
           })}
           id="exampleModal"
-          tabindex="-1"
+          tabIndex="-1"
           role="dialog"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
           <div className="modal-dialog modal-lg">
             <div className="modal-content">
-              <div className="modal-header"></div>
+              <div className="modal-header border-0"></div>
               <div className={classnames({ modalBody: this.state.setClose })}>
                 <div className="row">
-                  <SignUp />
+                  <SignUp handleClick={this.handleClose.bind(this)} />
 
                   <Login />
                 </div>
-                <div className="modal-footer">
+                <div className="modal-footer border-0">
                   <button
                     onClick={() => this.handleClose()}
                     type="button"

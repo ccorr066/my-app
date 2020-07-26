@@ -54,7 +54,7 @@ $grays: map-merge(
 
 $blue: $blue-600;
 $red: $red-600;
-$gray: $gray-600;
+$gray: $gray-500;
 
 $colors: ();
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -69,8 +69,8 @@ $colors: map-merge(
   $colors
 );
 $primary: $gray;
-$secondary: $gray-700;
-$success: $blue;
+$secondary: $gray-500;
+$success: $gray-500;
 $danger: $red;
 $light: $gray-100;
 $dark: $gray-800;
@@ -157,7 +157,7 @@ $btn-border-width: $border-width;
 
 $border-color: $primary;
 
-$border-radius: map-get($spacers, 1);
+$border-radius: map-get($spacers, 2);
 $border-radius-lg: $border-radius;
 $border-radius-sm: $border-radius;
 

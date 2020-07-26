@@ -16,8 +16,10 @@
     "react-audio-player": "^0.13.0",
     "react-dom": "^16.13.1",
     "react-mic": "^12.4.6",
+    "react-rating-stars-component": "^2.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-star-ratings": "^2.3.0",
     "uuid": "^8.2.0"
   },
   "scripts": {

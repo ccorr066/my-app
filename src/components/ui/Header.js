@@ -1,15 +1,26 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import logo from "../../img/Landlord Review-logo/landlordReview.svg"
 import LandingModal from "../ui/LandingModal"
-import logo from "../../img/Landlord Review-logo/default.png"
+import { Link } from "react-router-dom"
 
 export default function Header() {
   return (
-    <nav className="navbar navbar-light bg-light">
-      <Link to="/" type="logo" id="logo">
-        <img src={logo} width="100px" alt="" />
-      </Link>
-      <LandingModal />
-    </nav>
+    <>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <Link to="/">
+              <img
+                src={logo}
+                style={{ marginTop: "-56px", marginLeft: "-140px" }}
+                alt=""
+              />
+            </Link>
+          </div>
+
+          <LandingModal />
+        </div>
+      </div>
+    </>
   )
 }

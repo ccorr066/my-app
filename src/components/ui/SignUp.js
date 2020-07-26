@@ -12,8 +12,10 @@ export default class SignUp extends React.Component {
       isDisplayingInputs: false,
       emailError: "",
       passwordError: "",
+      fullNameError: "",
       hasEmailError: false,
       hasPasswordError: false,
+      hasFullNameError: false,
     }
   }
 
@@ -79,31 +81,50 @@ export default class SignUp extends React.Component {
       this.setState({ passwordError: "", hasPasswordError: false })
     }
   }
+  async setFullNameState(fullNameInput) {
+    //eslint-disable-next-line
+    const lowerCaseFullName = fullNameInput.toLowerCase()
+
+    if (fullNameInput.length === 0) {
+      this.setState({
+        fullNameError: "Please enter your full name. ",
+        hasFullNameError: true,
+      })
+    } else {
+      this.setState({ fullNameError: "", hasFullNameError: false })
+    }
+  }
 
   async validateAndCreateUser() {
     const emailInput = document.getElementById("email-input").value
     const passwordInput = document.getElementById("password-input").value
+    const fullNameInput = document.getElementById("full-name-input").value
     await this.setEmailState(emailInput)
     await this.setPasswordState(passwordInput, emailInput)
+    await this.setFullNameState(fullNameInput)
     if (
       this.state.hasEmailError === false &&
       this.state.hasPasswordError === false
     ) {
+      this.props.handleClick()
       const user = {
         id: getUuid(),
+        fullName: fullNameInput,
         email: emailInput,
         passwordInput: hash(passwordInput),
         createdAt: Date.now(),
       }
       console.log(user)
     }
+
+    console.log("This one here:", this.props.handleClick)
   }
 
   render() {
     return (
-      <div className="col-xl-5 col-sm-6 col-12 mb-6">
+      <div className="col-xl-5 col-sm-6 col-12 modalCard">
         <div className="card">
-          <div className="card-body text-dark text-sans">
+          <div className="card-body text-sans">
             <h2 className="card-title text-serif">
               Welcome to Landlord Review{" "}
             </h2>
@@ -111,15 +132,39 @@ export default class SignUp extends React.Component {
             {this.state.isDisplayingInputs && (
               <>
                 <p
-                  style={{ color: "blue", fontSize: "13px" }}
+                  style={{ color: "gray", fontSize: "13px" }}
                   className="mb-3"
                   id="sign-up-text"
                 >
                   Let's get you signed up.
                 </p>
+                <form>
+                  <div className="form-row">
+                    <div className="col">
+                      <h4 className="text-muted mt-4">Full Name</h4>
+                      <input
+                        type="text"
+                        className={classnames({
+                          "form-control": true,
+                          "is-invalid": this.state.hasFullNameError,
+                        })}
+                        id="full-name-input"
+                      />
+                      {this.state.hasFullNameError && (
+                        <p
+                          id="full-name-error"
+                          className="mb-2 text-danger"
+                          style={{ fontSize: "13px" }}
+                        >
+                          {this.state.fullNameError}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </form>
 
                 <div id="drop-assign">
-                  <h4 className="text-muted mt-2">Email address</h4>
+                  <h4 className="text-muted mt-4">Email address</h4>
                   <input
                     className={classnames({
                       "form-control": true,
