@@ -12,11 +12,10 @@ export default class LandingModal extends React.Component {
   constructor() {
 <<<<<<< HEAD
     super()
-    this.state = { setShow: false, isLoggedIn: false }
+    this.state = { setShow: false }
   }
 
   handleClose() {
-    this.handleLoginStatus()
     this.setState({ setShow: false })
 =======
     super();
@@ -38,12 +37,8 @@ export default class LandingModal extends React.Component {
     this.setState({ isLoggedIn: toggle });
   }
 
-  handleLoginStatus() {
-    let toggle = !this.state.isLoggedIn
-    this.setState({ isLoggedIn: toggle })
-  }
-
   render() {
+<<<<<<< HEAD
 <<<<<<< HEAD
     const loginState = this.state.isLoggedIn
     let btnText
@@ -60,6 +55,8 @@ export default class LandingModal extends React.Component {
       btnText = "Signup | Login";
 >>>>>>> 3aaf0cf7c08bd6d60d83480665bdec766c9eee33
     }
+=======
+>>>>>>> parent of b8049b9... added logout state
     return (
       <>
         <button
@@ -73,8 +70,9 @@ export default class LandingModal extends React.Component {
           data-toggle="modal"
           data-target="#exampleModal"
         >
-          {btnText}
+          Sign Up | Login
         </button>
+
         <div
           className={classnames("modal fade", {
             modalHack: this.state.setShow,
@@ -90,7 +88,7 @@ export default class LandingModal extends React.Component {
               <div className="modal-header border-0"></div>
               <div className={classnames({ modalBody: this.state.setClose })}>
                 <div className="row">
-                  <SignUp handleClick={this.handleClose.bind()} />
+                  <SignUp handleClick={this.handleClose.bind(this)} />
 
                   <Login />
                 </div>
