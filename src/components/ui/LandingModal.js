@@ -1,7 +1,7 @@
-import React from "react"
-import classnames from "classnames"
-import SignUp from "../ui/SignUp"
-import Login from "../ui/Login"
+import React from "react";
+import classnames from "classnames";
+import SignUp from "../ui/SignUp";
+import Login from "../ui/Login";
 // import { Link } from "react-router-dom"
 
 // fix the design on the cards.
@@ -10,6 +10,7 @@ import Login from "../ui/Login"
 
 export default class LandingModal extends React.Component {
   constructor() {
+<<<<<<< HEAD
     super()
     this.state = { setShow: false, isLoggedIn: false }
   }
@@ -17,10 +18,24 @@ export default class LandingModal extends React.Component {
   handleClose() {
     this.handleLoginStatus()
     this.setState({ setShow: false })
+=======
+    super();
+    this.state = { setShow: false, isLoggedIn: false };
+  }
+
+  handleClose() {
+    this.handleLoginStatus();
+    this.setState({ setShow: false });
+>>>>>>> 3aaf0cf7c08bd6d60d83480665bdec766c9eee33
   }
 
   handleShow() {
-    this.setState({ setShow: true })
+    this.setState({ setShow: true });
+  }
+
+  handleLoginStatus() {
+    let toggle = !this.state.isLoggedIn;
+    this.setState({ isLoggedIn: toggle });
   }
 
   handleLoginStatus() {
@@ -29,12 +44,21 @@ export default class LandingModal extends React.Component {
   }
 
   render() {
+<<<<<<< HEAD
     const loginState = this.state.isLoggedIn
     let btnText
     if (loginState === true) {
       btnText = "Logout"
     } else {
       btnText = "Signup | Login"
+=======
+    const loginState = this.state.isLoggedIn;
+    let btnText;
+    if (loginState === true) {
+      btnText = "Logout";
+    } else {
+      btnText = "Signup | Login";
+>>>>>>> 3aaf0cf7c08bd6d60d83480665bdec766c9eee33
     }
     return (
       <>
@@ -85,6 +109,6 @@ export default class LandingModal extends React.Component {
           </div>
         </div>
       </>
-    )
+    );
   }
 }
