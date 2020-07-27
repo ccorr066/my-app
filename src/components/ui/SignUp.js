@@ -106,6 +106,7 @@ export default class SignUp extends React.Component {
       this.state.hasEmailError === false &&
       this.state.hasPasswordError === false
     ) {
+      this.props.handleClick()
       const user = {
         id: getUuid(),
         fullName: fullNameInput,
@@ -115,6 +116,8 @@ export default class SignUp extends React.Component {
       }
       console.log(user)
     }
+
+    console.log("This one here:", this.props.handleClick)
   }
 
   render() {
@@ -129,15 +132,15 @@ export default class SignUp extends React.Component {
             {this.state.isDisplayingInputs && (
               <>
                 <p
-                  style={{ color: "blue", fontSize: "13px" }}
+                  style={{ color: "gray", fontSize: "13px" }}
                   className="mb-3"
                   id="sign-up-text"
                 >
                   Let's get you signed up.
                 </p>
                 <form>
-                  <div class="form-row">
-                    <div class="col">
+                  <div className="form-row">
+                    <div className="col">
                       <h4 className="text-muted mt-4">Full Name</h4>
                       <input
                         type="text"

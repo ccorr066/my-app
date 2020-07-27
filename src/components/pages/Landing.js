@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../../img/Landlord Review-logo/landlordReview.svg";
-import LandingModal from "../ui/LandingModal";
+import React from "react"
+import { Link } from "react-router-dom"
+import logo from "../../img/Landlord Review-logo/landlordReview.svg"
+import LandingModal from "../ui/LandingModal"
 // import logo from "../../img/Landlord Review-logo/landlordReview.svg"
 // import LandingModal from "../ui/LandingModal"
 
@@ -55,5 +55,5 @@ export default function Landing() {
         </form>
       </div>
     </>
-  );
+  )
 }
