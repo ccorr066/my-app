@@ -11,10 +11,11 @@ import Login from "../ui/Login"
 export default class LandingModal extends React.Component {
   constructor() {
     super()
-    this.state = { setShow: false }
+    this.state = { setShow: false, isLoggedIn: false }
   }
 
   handleClose() {
+    this.handleLoginStatus()
     this.setState({ setShow: false })
   }
 
@@ -22,7 +23,19 @@ export default class LandingModal extends React.Component {
     this.setState({ setShow: true })
   }
 
+  handleLoginStatus() {
+    let toggle = !this.state.isLoggedIn
+    this.setState({ isLoggedIn: toggle })
+  }
+
   render() {
+    const loginState = this.state.isLoggedIn
+    let btnText
+    if (loginState === true) {
+      btnText = "Logout"
+    } else {
+      btnText = "Signup | Login"
+    }
     return (
       <>
         <button
@@ -36,9 +49,8 @@ export default class LandingModal extends React.Component {
           data-toggle="modal"
           data-target="#exampleModal"
         >
-          Sign Up | Login
+          {btnText}
         </button>
-
         <div
           className={classnames("modal fade", {
             modalHack: this.state.setShow,
@@ -54,7 +66,7 @@ export default class LandingModal extends React.Component {
               <div className="modal-header border-0"></div>
               <div className={classnames({ modalBody: this.state.setClose })}>
                 <div className="row">
-                  <SignUp handleClick={this.handleClose.bind(this)} />
+                  <SignUp handleClick={this.handleClose.bind()} />
 
                   <Login />
                 </div>
